@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hydroponics helper</title>
 </head>
 <body>
-    
+    <header>
+        <img id="logo" src="pictures/logo.png">
+    </header>
+
+    <div id="selection">
+        <select name="type" id="selectPlant">
+            <option value="">Choose Plant</option>
+            <option value="Lettuce">Lettuce</option>
+        </select>
+    </div>
+
+    <div id="informationDisplay">
+        <table>
+            <tr>
+                <td><img id='img-plant' src="pictures/rainbow-shard.jpeg"></td>
+                <td><h2>Lettuce</h2></td>
+            </tr>
+        
+        </table>
+    </div>
 </body>
+<script src="scripts/app.js"></script>
+<script src="scripts/vendor.js"></script>
 </html>

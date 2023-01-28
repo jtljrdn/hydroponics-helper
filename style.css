@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #52796f;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(245, 245, 245);
+}
+
+#logo {
+    width: 50%;
+}
+
+header {
+    padding-top: 20px;
+}
+
+#selection {
+    padding-top: 50px;
+}
+
+#img-plant {
+    height: 400px;
+}
+
+table {
+    margin-top: 50px;
+    margin-left:auto; 
+    margin-right:auto;
+    border: 1px solid;
+}
+
+td {
+
+    border: 1px solid;
+}
+
