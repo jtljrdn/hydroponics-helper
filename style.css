@@ -25,6 +25,7 @@ header {
 
 #img-plant {
     width: 300px;
+    border-radius: 15px;
 }
 
 #cell-img, #cell-info {
