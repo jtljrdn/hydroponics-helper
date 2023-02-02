@@ -18,14 +18,16 @@ function fillInfo(plantChoice) {
             console.log(plantInfo[i].name, plantChoice)
             infoTable.style.display = 'inline-block'
             plantImg.src = plantInfo[i].img
-            plantName.innerHTML = plantInfo[i].name
-            plantType.innerHTML = plantInfo[i].type
+            plantName.innerHTML = `<strong>${plantInfo[i].name}</strong>`
+            plantType.innerHTML = `<em>${plantInfo[i].type}</em>`
             plantPH.innerHTML = `Recommended PH: ${plantInfo[i].ph}`
             plantEC.innerHTML = `Recommended E.C.: ${plantInfo[i].ec}`
             plantTemp.innerHTML = `Average Recommended Temperature: ${plantInfo[i].temperature}&#8457;`
             plantGrowthTime.innerHTML = `Expected Growth Time: ${plantInfo[i].growthTime}`
             }
         }
+    } else {
+      alert('Please Choose a Plant')
     }
 }
 
