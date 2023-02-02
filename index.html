@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,30 +19,31 @@
       <img id="logo" src="pictures/logo.png" />
     </header>
 
-    <div id="selection">
-      <select name="type" id="selectPlant">
+    <div class="container">
+      <select name="type" id="selectPlant" class="form-select">
         <option value="">Choose Plant</option>
       </select>
     </div>
 
     <div id="informationDisplay">
-      <table>
+      <table id="table-info">
         <tr>
           <td id="cell-img">
             <img id="img-plant" src="pictures/rainbow-chard.jpg" />
           </td>
           <td id="cell-info">
-            <h2 id="plant-name">Lettuce</h2>
-            <h3 id="plant-type">Leafy Green</h3>
+            <h2 id="plant-name"></h2>
+            <h3 id="plant-type"></h3>
             <br />
-            <h3 id="plant-ph">Recommended PH: 5.5-6</h3>
-            <h3 id="plant-ec">Recommended EC: 1.4-1.8</h3>
-            <h3 id="plant-temp">Temperature: 71</h3>
-            <h3 id="plant-growth-time">Growth Time: 6-8 Weeks</h3>
+            <h3 id="plant-ph"></h3>
+            <h3 id="plant-ec"></h3>
+            <h3 id="plant-temp"></h3>
+            <h3 id="plant-growth-time"></h3>
           </td>
         </tr>
       </table>
     </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
   <script src="scripts/vendor.js"></script>
   <script src="scripts/app.js"></script>
