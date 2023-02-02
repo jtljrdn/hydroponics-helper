@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydroponics helper</title>
-</head>
-<body onload="fillDropdown()">
+  </head>
+  <body onload="fillDropdown()">
     <header>
-        <img id="logo" src="pictures/logo.png">
+      <img id="logo" src="pictures/logo.png" />
     </header>
 
     <div id="selection">
-        <select name="type" id="selectPlant">
-            <option value="">Choose Plant</option>
-        </select>
+      <select name="type" id="selectPlant">
+        <option value="">Choose Plant</option>
+      </select>
     </div>
 
     <div id="informationDisplay">
-        <table>
-            <tr>
-                <td id="cell-img"><img id='img-plant' src="pictures/rainbow-shard.jpg"></td>
-                <td id="cell-info">
-                    <h2 id="plant-name">Lettuce</h2>
-                    <h3 id="plant-type">Leafy Green</h3>
-                    <br>
-                    <h3 id="plant-ph">Recommended PH: 5.5-6</h3>
-                    <h3 id="plant-ec">Recommended EC: 1.4-1.8</h3>
-                    <h3 id="plant-temp">Temperature: 71</h3>
-                    <h3 id="plant-growth-time">Growth Time: 6-8 Weeks</h3>
-                </td>
-            </tr>
-        
-        </table>
+      <table>
+        <tr>
+          <td id="cell-img">
+            <img id="img-plant" src="pictures/rainbow-chard.jpg" />
+          </td>
+          <td id="cell-info">
+            <h2 id="plant-name">Lettuce</h2>
+            <h3 id="plant-type">Leafy Green</h3>
+            <br />
+            <h3 id="plant-ph">Recommended PH: 5.5-6</h3>
+            <h3 id="plant-ec">Recommended EC: 1.4-1.8</h3>
+            <h3 id="plant-temp">Temperature: 71</h3>
+            <h3 id="plant-growth-time">Growth Time: 6-8 Weeks</h3>
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
-<script src="scripts/vendor.js"></script>
-<script src="scripts/app.js"></script>
+  </body>
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/app.js"></script>
 </html>

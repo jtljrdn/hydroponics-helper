@@ -4,13 +4,9 @@ function fillDropdown() {
     const plantName = plantInfo[i].name;
     let op = document.createElement("option");
     op.value = plantName;
-    op.innerHTML = cap(plantName);
+    op.innerHTML = plantName;
     plantSelect.appendChild(op);
   }
-}
-
-function cap(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function fillInfo(plantChoice) {
@@ -18,11 +14,21 @@ function fillInfo(plantChoice) {
     if (plantChoice != '') {
         resetInfo()
         for (let i = 0; i < plantInfo.length; i++) {
-
+            if (plantChoice == plantInfo[i].name) {
+            console.log(plantInfo[i].name, plantChoice)
+            plantImg.src = plantInfo[i].img
+            plantName.innerHTML = plantInfo[i].name
+            }
         }
     }
 }
 
 function resetInfo(){
-    
+    plantImg.src = '';
+    plantName.innerHTML = '';
+    plantType.innerHTML = '';
+    plantPH.innerHTML = '';
+    plantEC.innerHTML = '';
+    plantTemp.innerHTML ='';
+    plantGrowthTime.innerHTML = '';
 }
