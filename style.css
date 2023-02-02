@@ -19,8 +19,9 @@ header {
     border-bottom: 2px solid rgb(56, 60, 63);
 }
 
-#selection {
+.container {
     padding-top: 50px;
+    max-width: 200px;
 }
 
 #img-plant {
@@ -39,6 +40,7 @@ table {
     border: 1px solid #606c38;
     background-color: #606c38;
     border-radius: 15px;
+    display: none;
 }
 
 td {
