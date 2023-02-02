@@ -1,6 +1,6 @@
 const plantInfo = [
     {name: 'Lettuce', ph: 5.3, ec: 1.8, growthTime: '2 weeks', temperature: 72, img: 'pictures/lettuce.JPG', type: 'Leafy Green'},
-    {name: 'Rainbow Chard', ph: '6 - 6.8', ec: 2.0, growthTime: '8 weeks', temperature: 72, img: 'pictures/rainbow-chard.jpg', type: 'Leafy Green'},
+    {name: 'Rainbow Chard', ph: '6 - 6.8', ec: 2.0, growthTime: '8 weeks', temperature: 72, img: 'pictures/rainbow-chard.JPG', type: 'Leafy Green'},
     {name: 'Cilantro', ph: '6.5 - 7.5', ec: '1.2 - 2.8', growthTime: '7 weeks', temperature: 60, img: 'pictures/cilantro.JPG', type: 'Herb'},
     {name: 'Dill', ph: '5.6 - 6.5', ec: '1 - 1.6', growthTime: '13 weeks', temperature: 67, img: 'pictures/dill.JPG', type: 'Herb'},
     {name: 'Arugula', ph: '6 - 7.5', ec: '0.8 - 1.4', growthTime: '6 weeks', temperature: 55, img: 'pictures/arugula.JPG', type: 'Leafy Green'},
