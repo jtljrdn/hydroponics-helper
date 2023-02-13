@@ -31,6 +31,29 @@ function fillInfo(plantChoice) {
     }
 }
 
+function calculateEC(currentEC, currentPlant) {
+  EcResult.innerHTML = '';
+  for (let i = 0; i < plantInfo.length; i++) {
+    if (currentPlant == plantInfo[i].name) {
+      currentPlant = plantInfo[i];
+      console.log(currentEC, currentPlant.ec);
+      let newEC = 0;
+      let cupsToAdd = 0;
+      if (currentEC < currentPlant.ec) {
+        newEC = currentPlant.ec - currentEC;
+        cupsToAdd = newEC / 0.4 / 4;
+        cupsToAddFixed = cupsToAdd.toFixed(2);
+        EcResult.innerHTML = `Add ${cupsToAddFixed} cups of water to your mixture for ${currentPlant.name}.`;
+      } else if (currentEC == currentPlant.ec) {
+        alert("Your E.C. is already high enough");
+      } else if (currentEC > currentPlant.ec) {
+        alert("Your E.C. is too high, add water to mixture.");
+      }
+    }
+  }
+}
+
+
 function resetInfo(){
     plantImg.src = '';
     plantName.innerHTML = '';
@@ -39,4 +62,6 @@ function resetInfo(){
     plantEC.innerHTML = '';
     plantTemp.innerHTML ='';
     plantGrowthTime.innerHTML = '';
+    currentEC.value = '';
+    EcResult.innerHTML = '';
 }
