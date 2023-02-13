@@ -43,7 +43,7 @@ function calculateEC(currentEC, currentPlant) {
         newEC = currentPlant.ec - currentEC;
         cupsToAdd = newEC / 0.4 / 4;
         cupsToAddFixed = cupsToAdd.toFixed(2);
-        EcResult.innerHTML = `Add ${cupsToAddFixed} cups of water to your mixture for ${currentPlant.name}.`;
+        EcResult.innerHTML = `Add ${cupsToAddFixed} cups of NPK mixture to your water for ${currentPlant.name}.`;
       } else if (currentEC == currentPlant.ec) {
         alert("Your E.C. is already high enough");
       } else if (currentEC > currentPlant.ec) {
